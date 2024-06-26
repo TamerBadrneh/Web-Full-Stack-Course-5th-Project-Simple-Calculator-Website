@@ -1,0 +1,189 @@
+/* Body */
+.flex-page {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Frame */
+.container {
+  height: 500px;
+  width: 450px;
+  background-color: #cde8e5;
+  border: solid 5px #4d869c;
+  border-radius: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Input */
+#display-screen {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: none;
+  border-radius: 30px;
+  width: 320px;
+  height: 55px;
+  background-color: #eef7ff;
+  padding-right: 30px;
+  text-align: end;
+}
+
+/* buttons */
+.btn {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  background-color: #7ab2b2;
+}
+
+/* Shorthand */
+.btn,
+#display-screen,
+footer {
+  font-family: "Poppins";
+  font-weight: light;
+  font-size: larger;
+}
+
+/* grid - flexbox */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+/* Each row with 4 buttons */
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+/* Answer button custom */
+#answer {
+  background-color: #4d869c;
+}
+
+/* Hovering Event handle Style */
+.btn:hover {
+  background-color: #cdffd8;
+  color: black;
+}
+
+#answer:hover {
+  background-color: #cdffd8;
+}
+
+#display-screen:hover {
+  border: 5px dotted #4d869c;
+}
+
+/* Footer element */
+footer {
+  color: #4d869c;
+}
+
+/* Animation */
+body {
+  background: linear-gradient(90deg, #cdffd8, #7ab2b2, #cdffd8, #94b9ff);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 430px) {
+  .container {
+    height: 300px;
+    width: 250px;
+  }
+
+  #display-screen {
+    width: 165px;
+    height: 40px;
+    padding-right: 15px;
+  }
+
+  .btn {
+    height: 35px;
+    width: 35px;
+  }
+
+  .flex-container {
+    gap: 7px;
+    margin-top: 10px;
+  }
+
+  .row {
+    gap: 10px;
+  }
+
+  .btn,
+  #display-screen,
+  footer {
+    font-family: "Poppins";
+    font-weight: light;
+    font-size: medium;
+  }
+}
+
+@media (max-width: 248px) {
+  .container {
+    height: 250px;
+    width: 180px;
+  }
+
+  #display-screen {
+    width: 100px;
+    height: 40px;
+    padding-right: 25px;
+  }
+
+  .btn {
+    height: 25px;
+    width: 25px;
+  }
+
+  .flex-container {
+    gap: 7px;
+    margin-top: 5px;
+  }
+
+  .row {
+    gap: 8px;
+  }
+
+  .btn,
+  #display-screen {
+    font-family: "Poppins";
+    font-weight: light;
+    font-size: smaller;
+  }
+
+  footer {
+    font-size: x-small;
+  }
+}
+
+/* DOM Manipulation */

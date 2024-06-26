@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator - DOM</title>
+    <!-- Font - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Icon -->
+    <link rel="icon" href="./Assets/icons/website Icon.png" />
+  </head>
+  <body class="flex-page">
+    <div class="container">
+      <div id="display-screen"><p></p></div>
+      <div class="flex-container">
+        <div class="row">
+          <button class="btn number" id="one">1</button>
+          <button class="btn number" id="two">2</button>
+          <button class="btn number" id="three">3</button>
+          <button class="btn operation" id="add">+</button>
+        </div>
+        <div class="row">
+          <button class="btn number" id="four">4</button>
+          <button class="btn number" id="five">5</button>
+          <button class="btn number" id="six">6</button>
+          <button class="btn operation" id="subtract">-</button>
+        </div>
+        <div class="row">
+          <button class="btn number" id="seven">7</button>
+          <button class="btn number" id="eight">8</button>
+          <button class="btn number" id="nine">9</button>
+          <button class="btn operation" id="multiply">x</button>
+        </div>
+        <div class="row">
+          <button class="btn number" id="zero">0</button>
+          <button class="btn" id="answer">=</button>
+          <button class="btn" id="eraser">C</button>
+          <button class="btn operation" id="divide">/</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>Created By: Tamer Badarneh</footer>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- JS -->
+    <script src="./index.js"></script>
+  </body>
+</html>
